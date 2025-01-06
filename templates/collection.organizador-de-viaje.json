@@ -1,0 +1,77 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_3RqXxr": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 768px) {h1 {font-size: 40px !important; } , p {font-size: 15.3px !important; }}",
+        "@media (min-width: 768px) {p {font-size: 19.1px; } , h1 {font-size: 50px; }}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<p>Colección de</p>\n<h1>{{ collection.title }}</h1>",
+        "text_alignment": "start"
+      }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "custom_css": [
+        ".prose.text-center {text-align: left;}",
+        ".container.container--xs {max-width: 70%; margin-left: 30px; text-align: left;}",
+        "@media (max-width: 730px) {.container.container--xs {max-width: 100%; margin-left: 20px; text-align: left; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-a5e66293-cb12-4950-b6ab-01492fe1bd47",
+        "image_size": "xs",
+        "allow_transparent_header": true,
+        "reveal": false,
+        "enable_parallax": false,
+        "show_image": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "",
+        "hide_product_information": false,
+        "products_per_page": 50,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "sidebar",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_3RqXxr",
+    "collection-banner",
+    "main"
+  ]
+}
