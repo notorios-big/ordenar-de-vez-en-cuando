@@ -9,21 +9,9 @@
  */
 {
   "sections": {
-    "custom_liquid_3RqXxr": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "custom_css": [
-        "@media (max-width: 768px) {h1 {font-size: 40px !important; } , p {font-size: 15.3px !important; }}",
-        "@media (min-width: 768px) {p {font-size: 19.1px; } , h1 {font-size: 50px; }}"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<p>Colección de</p>\n<h1>{{ collection.title }}</h1>",
-        "text_alignment": "start"
-      }
+    "page_breadcrumbs_ctGEWV": {
+      "type": "page--breadcrumbs",
+      "settings": {}
     },
     "collection-banner": {
       "type": "collection-banner",
@@ -66,7 +54,7 @@
     }
   },
   "order": [
-    "custom_liquid_3RqXxr",
+    "page_breadcrumbs_ctGEWV",
     "collection-banner",
     "main"
   ]
