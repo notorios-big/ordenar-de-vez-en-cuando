@@ -138,7 +138,7 @@
             "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "",
-            "button_text": "View productsVer más",
+            "button_text": "Ver más",
             "button_link": "",
             "button_style": "solid",
             "overlay_color": "#000000",
@@ -159,7 +159,7 @@
         "space_items": false,
         "stack_collections": true,
         "collections_per_row_mobile": "1",
-        "collections_per_row_desktop": 4,
+        "collections_per_row_desktop": 3,
         "subheading": "",
         "title": "",
         "content": ""
