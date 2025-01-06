@@ -164,11 +164,74 @@
         "title": "",
         "content": ""
       }
+    },
+    "featured_collections_3EcRtp": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_GjbE9i": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 5,
+            "title": "RECIEN LLEGADOS",
+            "link_url": "",
+            "link_text": "VER MÁS"
+          }
+        },
+        "collection_Hmr7gt": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_4LFcTY": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_gwr7pD": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_GjbE9i",
+        "collection_Hmr7gt",
+        "collection_4LFcTY",
+        "collection_gwr7pD"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": true,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "NUESTRAS CATEGORÍAS MÁS POPULARES"
+      }
     }
   },
   "order": [
     "slideshow",
     "custom_liquid_bdef6Y",
-    "collection_list_jreBkT"
+    "collection_list_jreBkT",
+    "featured_collections_3EcRtp"
   ]
 }
