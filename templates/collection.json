@@ -37,7 +37,7 @@
         "show_image": false,
         "show_collection_title": true,
         "show_collection_description": true,
-        "show_breadcrumb": true,
+        "show_breadcrumb": false,
         "content_width": "xs",
         "overlay_color": "#000000",
         "overlay_opacity": 30
