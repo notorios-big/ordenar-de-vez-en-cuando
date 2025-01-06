@@ -40,12 +40,12 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "subheading": "PROYECTOS PERSONALIZADOS",
-            "title": "Te entendemos<strong>, diseñamos el proyecto que necesites.</strong>",
+            "subheading": "Organiza con confianza",
+            "title": "Te entendemos<strong>, es gratificante tener todo en su lugar.</strong>",
             "mobile_text_position": "place-self-end-start text-start",
             "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "content_max_width": 780,
-            "button_1_text": "¿Hablamos?",
+            "button_1_text": "¿Organicemos?",
             "button_1_link": "shopify://pages/contact",
             "button_1_style": "solid",
             "button_1_background": "#ffffff",
@@ -90,7 +90,7 @@
         "separate_section_with_border": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<p>Todo es más bello</p>\n<h1>Decorado con Musgos</h1>",
+        "liquid": "<p>Todo es más bello</p>\n<h1>Cuando esta Organizado</h1>",
         "text_alignment": "start"
       }
     },

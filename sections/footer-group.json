@@ -14,20 +14,28 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "links_YHUgrK": {
-          "type": "links",
-          "settings": {
-            "menu": "",
-            "show_menu_title": true,
-            "menu_title": "Nuestra Historia"
-          }
-        },
-        "links_CyXaQg": {
+        "links_Y6zTA4": {
           "type": "links",
           "settings": {
             "menu": "footer",
             "show_menu_title": true,
-            "menu_title": "Politicas"
+            "menu_title": "Políticas"
+          }
+        },
+        "links_YHUgrK": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true,
+            "menu_title": "Nuestra Historia"
+          }
+        },
+        "links_mVTtkY": {
+          "type": "links",
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true,
+            "menu_title": "Sobre Nosotros"
           }
         },
         "newsletter": {
@@ -41,8 +49,9 @@
         }
       },
       "block_order": [
+        "links_Y6zTA4",
         "links_YHUgrK",
-        "links_CyXaQg",
+        "links_mVTtkY",
         "newsletter"
       ],
       "settings": {
