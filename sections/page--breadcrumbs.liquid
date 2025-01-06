@@ -1,162 +1,119 @@
-<style>
-  .section--breadcrumbs-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .breadcrumbs-container {
-    background-color: #F9DEEB;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #0B479D;
-    font-size: 14px;
-    text-transform: capitalize;
-  }
-  .home-svg {
-    width: 20px;
-  }
-  .breadcrumbs-container a {
-    color: #0B479D !important;
-    text-decoration: none;
-  }
-  .breadcrumbs-container a:hover {
-    color: #0b47cd !important;
-    text-decoration: underline;
-  }
-  span.active {
-    color: #4a4a4a !important;
-  }
-  @media screen and (max-width: 749px) {
-    .breadcrumbs-container {
-      font-size: 11px;
-    }
-    .home-svg {
-      width: 15px;
-    }
-  }
-</style>
-
-<div class="section--breadcrumbs-container container">
-  <div class="breadcrumbs-container">
-    <div style="display: flex; align-items: center; gap: 5px; flex-wrap: wrap;">
-      {% if request.page_type == 'page' %}
-        <span style="order: 7;">
-          <span>/</span>
-          <span class="active" style="order: 3">
-            {% if page.metafields.custom.titulo_para_breadcrumb != blank %}
-              {{ page.metafields.custom.titulo_para_breadcrumb }}
-            {% else %}
-              {{ page.title }}
-            {% endif %}
-          </span>
-
-        </span>
-        {% assign page_object = page %}
-      {% elsif request.page_type == 'collection' %}
-        <span style="order: 7;">
-          <span>/</span>
-          <span class="active">
-            {% if collection.metafields.custom.titulo_para_breadcrumbs != blank %}
-              {{ collection.metafields.custom.titulo_para_breadcrumbs | downcase }}
-            {% else %}
-              {{ collection.title | downcase }}
-            {% endif %}
-          </span>
-
-        </span>
-        {% assign page_object = collection %}
-      {% elsif request.page_type == 'product' %}
-        <span style="order: 7;">
-          <span>/</span>
-          <span class="active">
-            {% if product.metafields.custom.titulo_para_breadcrumb != blank %}
-              {{ product.metafields.custom.titulo_para_breadcrumb | downcase }}
-            {% else %}
-              {{ product.title | downcase }}
-            {% endif %}
-          </span>
-
-        </span>
-
-        <span style="order: 6;">
-          <span>/</span>
-          {% if product.metafields.custom.parent_page != blank %}
-            <a href="{{ product.metafields.custom.parent_page.value.url }}">
-              {% if product.metafields.custom.parent_page.value.metafields.custom.titulo_para_breadcrumb != blank %}
-                {{ product.metafields.custom.parent_page.value.metafields.custom.titulo_para_breadcrumb | downcase }}
+{% if request.page_type == 'product' or request.page_type == 'collection' or request.page_type == 'page' %}
+  <div class="section--breadcrumbs-container container">
+    <div class="breadcrumbs-container">
+      <div style="display: flex; align-items: center; gap: 5px; flex-wrap: wrap;">
+        {% if request.page_type == 'page' %}
+          <span style="order: 7;">
+            <span>/</span>
+            <span class="active" style="order: 3">
+              {% if page.metafields.custom.titulo_para_breadcrumb != blank %}
+                {{ page.metafields.custom.titulo_para_breadcrumb }}
               {% else %}
-                {{ product.metafields.custom.parent_page.value.title | downcase }}
+                {{ page.title }}
               {% endif %}
-            </a>
-            {% assign page_object = product.metafields.custom.parent_page.value %}
-          {% elsif product.metafields.custom.parent_collection != blank %}
-            <a href="{{ product.metafields.custom.parent_collection.value.url }}">
-              {% if product.metafields.custom.parent_collection.value.metafields.custom.titulo_para_breadcrumbs != blank %}
-                {{ product.metafields.custom.parent_collection.value.metafields.custom.titulo_para_breadcrumbs | downcase }}
+            </span>
+  
+          </span>
+          {% assign page_object = page %}
+        {% elsif request.page_type == 'collection' %}
+          <span style="order: 7;">
+            <span>/</span>
+            <span class="active">
+              {% if collection.metafields.custom.titulo_para_breadcrumbs != blank %}
+                {{ collection.metafields.custom.titulo_para_breadcrumbs | downcase }}
               {% else %}
-                {{ product.metafields.custom.parent_collection.value.title | downcase }}
+                {{ collection.title | downcase }}
               {% endif %}
-            </a>
-            {% assign page_object = product.metafields.custom.parent_collection.value %}
-          {% else %}
-            <a href="{{ product.collections.first.url }}">
-              {% if product.collections.first.metafields.custom.titulo_para_breadcrumbs != blank %}
-                {{ product.collections.first.metafields.custom.titulo_para_breadcrumbs | downcase }}
+            </span>
+  
+          </span>
+          {% assign page_object = collection %}
+        {% elsif request.page_type == 'product' %}
+          <span style="order: 7;">
+            <span>/</span>
+            <span class="active">
+              {% if product.metafields.custom.titulo_para_breadcrumb != blank %}
+                {{ product.metafields.custom.titulo_para_breadcrumb | downcase }}
               {% else %}
-                {{ product.collections.first.title | downcase }}
+                {{ product.title | downcase }}
               {% endif %}
-            </a>
-            {% assign page_object = product.collections.first %}
-          {% endif %}
-        </span>
-        {% endif %}
-        {% for i in (1..5) %}
-          {% if page_object.metafields.custom.parent_page != blank %}
-            <span style="order: {{ 6 | minus: i }};">
-              <span>/</span>
-              <a href="{{ page_object.metafields.custom.parent_page.value.url }}">
-                {% if page_object.metafields.custom.parent_page.value.metafields.custom.titulo_para_breadcrumb != blank %}
-                  {{ page_object.metafields.custom.parent_page.value.metafields.custom.titulo_para_breadcrumb | downcase }}
+            </span>
+  
+          </span>
+  
+          <span style="order: 6;">
+            <span>/</span>
+            {% if product.metafields.custom.parent_page != blank %}
+              <a href="{{ product.metafields.custom.parent_page.value.url }}">
+                {% if product.metafields.custom.parent_page.value.metafields.custom.titulo_para_breadcrumb != blank %}
+                  {{ product.metafields.custom.parent_page.value.metafields.custom.titulo_para_breadcrumb | downcase }}
                 {% else %}
-                  {{ page_object.metafields.custom.parent_page.value.title | downcase }}
+                  {{ product.metafields.custom.parent_page.value.title | downcase }}
                 {% endif %}
               </a>
-            </span>
-            {% assign page_object = page_object.metafields.custom.parent_page.value %}
-          {% elsif page_object.metafields.custom.parent_collection != blank %}
-            <span style="order: {{ 6 | minus: i }};">
-              <span>/</span>
-              <a href="{{ page_object.metafields.custom.parent_collection.value.url }}">
-                {% if page_object.metafields.custom.parent_collection.value.metafields.custom.titulo_para_breadcrumbs != blank %}
-                  {{ page_object.metafields.custom.parent_collection.value.metafields.custom.titulo_para_breadcrumbs | downcase }}
+              {% assign page_object = product.metafields.custom.parent_page.value %}
+            {% elsif product.metafields.custom.parent_collection != blank %}
+              <a href="{{ product.metafields.custom.parent_collection.value.url }}">
+                {% if product.metafields.custom.parent_collection.value.metafields.custom.titulo_para_breadcrumbs != blank %}
+                  {{ product.metafields.custom.parent_collection.value.metafields.custom.titulo_para_breadcrumbs | downcase }}
                 {% else %}
-                  {{ page_object.metafields.custom.parent_collection.value.title | downcase }}
+                  {{ product.metafields.custom.parent_collection.value.title | downcase }}
                 {% endif %}
               </a>
-            </span>
-            {% assign page_object = page_object.metafields.custom.parent_collection.value %}
-          {% else %}
-            {% assign page_object = blank %}
+              {% assign page_object = product.metafields.custom.parent_collection.value %}
+            {% else %}
+              <a href="{{ product.collections.first.url }}">
+                {% if product.collections.first.metafields.custom.titulo_para_breadcrumbs != blank %}
+                  {{ product.collections.first.metafields.custom.titulo_para_breadcrumbs | downcase }}
+                {% else %}
+                  {{ product.collections.first.title | downcase }}
+                {% endif %}
+              </a>
+              {% assign page_object = product.collections.first %}
+            {% endif %}
+          </span>
           {% endif %}
-        {% endfor %}
-        <a style="display: flex; order: 0;" href="/" aria-label="volver a la home">
-          <svg class="home-svg" alt="volver a la home" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-            <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
-          </svg>
-        </a>
-
-        </div>
+          {% for i in (1..5) %}
+            {% if page_object.metafields.custom.parent_page != blank %}
+              <span style="order: {{ 6 | minus: i }};" {{ i }}>
+                <span>/</span>
+                <a href="{{ page_object.metafields.custom.parent_page.value.url }}">
+                  {% if page_object.metafields.custom.parent_page.value.metafields.custom.titulo_para_breadcrumb != blank %}
+                    {{ page_object.metafields.custom.parent_page.value.metafields.custom.titulo_para_breadcrumb | downcase }}
+                  {% else %}
+                    {{ page_object.metafields.custom.parent_page.value.title | downcase }}
+                  {% endif %}
+                </a>
+              </span>
+              {% assign page_object = page_object.metafields.custom.parent_page.value %}
+            {% elsif page_object.metafields.custom.parent_collection != blank %}
+              <span style="order: {{ 6 | minus: i }};">
+                <span>/</span>
+                <a href="{{ page_object.metafields.custom.parent_collection.value.url }}">
+                  {% if page_object.metafields.custom.parent_collection.value.metafields.custom.titulo_para_breadcrumbs != blank %}
+                    {{ page_object.metafields.custom.parent_collection.value.metafields.custom.titulo_para_breadcrumbs | downcase }}
+                  {% else %}
+                    {{ page_object.metafields.custom.parent_collection.value.title | downcase }}
+                  {% endif %}
+                </a>
+              </span>
+              {% assign page_object = page_object.metafields.custom.parent_collection.value %}
+            {% else %}
+              {% assign page_object = blank %}
+            {% endif %}
+          {% endfor %}
+          <a style="display: flex; order: 0;" href="/" aria-label="volver a la home">
+            <svg class="home-svg" alt="volver a la home" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+            </svg>
+          </a>
       </div>
     </div>
-{% if request.page_type == 'page' %}
-
-{% endif %}
-
-<script>
+  </div>
+  {% if request.page_type == 'page' %}
   
-</script>
+  {% endif %}
+{% endif %}
 
 {% schema %}
   {
