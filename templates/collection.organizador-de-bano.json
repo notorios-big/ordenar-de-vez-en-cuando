@@ -59,7 +59,7 @@
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
         "filter_layout": "sidebar",
-        "quick_links_menu": "",
+        "quick_links_menu": "organizador-de-ba-o",
         "show_sort_by": true,
         "show_filters": true,
         "show_results_count": true,
