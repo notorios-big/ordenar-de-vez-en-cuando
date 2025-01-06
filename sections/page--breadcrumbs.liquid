@@ -1,3 +1,46 @@
+<style>
+.section--breadcrumbs-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.breadcrumbs-container {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0B479D;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.home-svg {
+  width: 20px;
+}
+.breadcrumbs-container a {
+  color: black !important;
+  text-decoration: none;
+}
+.breadcrumbs-container a:hover {
+  color: black !important;
+  text-decoration: underline;
+}
+span.active {
+  color: #4a4a4a !important;
+}
+@media screen and (max-width: 749px) {
+  .breadcrumbs-container {
+    font-size: 11px;
+  }
+  .home-svg {
+    width: 15px;
+  }
+  .breadcrumbs-container a {
+  text-decoration: underline;
+}
+}
+
+</style>
+  
 {% if request.page_type == 'product' or request.page_type == 'collection' or request.page_type == 'page' %}
   <div class="section--breadcrumbs-container container">
     <div class="breadcrumbs-container">
