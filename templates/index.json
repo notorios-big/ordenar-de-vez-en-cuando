@@ -277,7 +277,7 @@
       ],
       "settings": {
         "color_scheme": "",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "content_width": "sm",
         "text_position": "center",
         "remove_vertical_spacing": false
