@@ -176,7 +176,7 @@
         "collection_Hmr7gt": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "oferta",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -186,7 +186,7 @@
         "collection_4LFcTY": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "best-sellers",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -208,7 +208,7 @@
         "products_per_row_desktop": 5,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
-        "subheading": "NUESTRAS CATEGORÍAS MÁS POPULARES"
+        "subheading": "NUESTRAS CATEGORÍAS MÁS QUERIDAS"
       }
     }
   },
