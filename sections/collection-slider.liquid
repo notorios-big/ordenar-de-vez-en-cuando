@@ -1,0 +1,311 @@
+{%- if section.blocks.size > 0 -%}
+  
+  {%- comment -%}
+  ------------------------------------------------------------------------------------------------------------------------
+  LIQUID
+  ------------------------------------------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  {%- assign remove_vertical_spacing = false -%}
+
+  {%- if section.settings.subheading == blank and section.settings.title == blank and section.settings.content == blank -%}
+    {%- assign reduce_vertical_spacing = true -%}
+
+    {%- unless section.settings.space_items -%}
+      {%- assign remove_vertical_spacing = true -%}
+    {%- endunless -%}
+  {%- endif -%}
+
+  {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
+
+  <div id="collection-slider-{{ section.id }}" class="{% unless remove_vertical_spacing %}section-spacing {% if reduce_vertical_spacing %}section-spacing--tight{% endif %}{% endunless %} color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
+    <div class="{% if section.settings.space_items %}container{% endif %}">
+      <div class="section-stack">
+        {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: 'center' -%}
+
+        {% capture collection_slider %}
+          {%- for block in section.blocks -%}
+            {%- assign collection = block.settings.collection -%}
+            {%- assign collection_url = block.settings.button_link | default: collection.url -%}
+
+            {%- capture collection_card_info -%}
+              <div class="collection-card-slider__content color-scheme color-scheme--{{ block.settings.color_scheme.id }} prose prose--tight {{ block.settings.content_position }}">
+                {%- if block.settings.subheading != blank -%}
+                  <p class="h6">{{- block.settings.subheading -}}</p>
+                {%- endif -%}
+              </div>
+            {%- endcapture -%}
+
+            {%- capture collection_card_content -%}
+              <div class="content-over-media-slider content-over-media--auto" style="--content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }};">
+                {%- assign image = block.settings.image | default: collection.featured_image -%}
+                {%- capture sizes -%}(max-width: 699px) 100vw, {% if block.settings.expand_collection %}100vw{% else %}(max-width: 1149px) {{ 100 | divided_by: section.settings.collections_per_row_desktop | at_least: 50 }}vw, {{ 100 | divided_by: section.settings.collections_per_row_desktop }}vw{% endif %}{%- endcapture -%}
+
+                {%- if image != blank -%}
+                   {{- image | image_url: width: image.width | image_tag: sizes: sizes, widths: '200,300,400,500,600,800,1000,1200,1400,1600,1800,2000,2200,2400', class: 'zoom-image group-hover:zoom', draggable: 'false' -}}
+                {%- else -%}
+                  {%- capture collection_placeholder -%}{%- cycle 'collection-1', 'collection-2', 'collection-3' -%}{%- endcapture -%}
+                  {{- collection_placeholder | placeholder_svg_tag: 'placeholder zoom-image group-hover:zoom' | replace: '<svg', '<svg preserveAspectRatio="xMinYMin slice"' -}}
+                {%- endif -%}
+
+                {%- unless section.settings.show_text_outside -%}
+                  {{- collection_card_info -}}
+                {%- endunless -%}
+              </div>
+
+              {%- if section.settings.show_text_outside -%}
+                {{- collection_card_info -}}
+              {%- endif -%}
+            {%- endcapture -%}
+
+            {%- if collection_url != blank -%}
+              <a href="{{ collection_url }}" class="collection-card-slider {% if block.settings.expand_collection %}grow{% endif %} {% unless section.settings.stack_collections %}shrink-0 snap-center{% endunless %} {% if forloop.first %}is-selected{% endif %} group" {{ block.shopify_attributes }}>
+                {{- collection_card_content -}}
+                {%- if block.settings.title != blank -%}
+                  <h3 class="h6">{{- block.settings.title -}}</h3>
+                {% else %}
+                  <h3 class="h6">{{ collection.title }}</h3>
+                {%- endif -%}
+              </a>
+            {%- else -%}
+              <div class="collection-card-slider {% if block.settings.expand_collection %}grow{% endif %} {% unless section.settings.stack_collections %}shrink-0 snap-center{% endunless %} {% if forloop.first %}is-selected{% endif %} group" {{ block.shopify_attributes }}>
+                {{- collection_card_content -}}
+                {%- if block.settings.title != blank -%}
+                  <h3 class="h6">{{- block.settings.title -}}</h3>
+                {% else %}
+                  <h3 class="h6">{{ collection.title }}</h3>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        {% endcapture %}
+
+        {% if section.settings.stack_collections or section.blocks.size <= 1 %}
+          <div class="collection-slider {% if section.settings.show_text_outside %}collection-slider--text-outside{% endif %} wrap">
+            {{ collection_slider }}
+          </div>
+        {% else %}
+          <div class="floating-controls-container floating-controls-container--inside floating-controls-container--on-hover">
+            {%- assign carousel_id = 'carousel-' | append: section.id -%}
+
+            <scroll-carousel id="{{ carousel_id }}" group-cells allow-drag class="collection-slider scroll-area {% if section.settings.show_text_outside %}collection-slider--text-outside{% endif %} bleed lg:unbleed">
+              {{ collection_slider }}
+            </scroll-carousel>
+
+            <button is="carousel-prev-button" type="button" class="prev-next-button prev-next-button--prev circle-button circle-button--lg hover:animate-icon-inline" aria-controls="{{ carousel_id }}" disabled>
+              <span class="sr-only">{{ 'general.accessibility.previous' | t }}</span>
+              {%- render 'icon' with 'arrow-left', direction_aware: true -%}
+            </button>
+
+            <button is="carousel-next-button" type="button" class="prev-next-button prev-next-button--next circle-button circle-button--lg hover:animate-icon-inline" aria-controls="{{ carousel_id }}">
+              <span class="sr-only">{{ 'general.accessibility.next' | t }}</span>
+              {%- render 'icon' with 'arrow-right', direction_aware: true -%}
+            </button>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Collection Slider",
+  "class": "shopify-section--collection-slider",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "separate_section_with_border",
+      "label": "Separate section with border",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_outside",
+      "label": "Show Text Outside",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "space_items",
+      "label": "Space Items",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_collections",
+      "label": "Stack Collections",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "collections_per_row_desktop",
+      "min": 1,
+      "max": 5,
+      "label": "Collections Per Row (Desktop)",
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection Block",
+      "settings": [
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "Color Scheme",
+          "default": "scheme-4"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "expand_collection",
+          "label": "Expand to Fill Row",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "content_position",
+          "label": "Content Position",
+          "options": [
+            {
+              "value": "place-self-start text-start",
+              "label": "Top Left"
+            },
+            {
+              "value": "place-self-start-center text-center",
+              "label": "Top Center"
+            },
+            {
+              "value": "place-self-start-end text-end",
+              "label": "Top Right"
+            },
+            {
+              "value": "place-self-center-start text-start",
+              "label": "Middle Left"
+            },
+            {
+              "value": "place-self-center text-center",
+              "label": "Middle Center"
+            },
+            {
+              "value": "place-self-center-end text-end",
+              "label": "Middle Right"
+            },
+            {
+              "value": "place-self-end-start text-start",
+              "label": "Bottom Left"
+            },
+            {
+              "value": "place-self-end-center text-center",
+              "label": "Bottom Center"
+            },
+            {
+              "value": "place-self-end text-end",
+              "label": "Bottom Right"
+            }
+          ],
+          "default": "place-self-end-start text-start"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "View products"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        },
+        {
+          "type": "header",
+          "content": "Overlay Settings"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay Color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Overlay Opacity",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 30
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Slider Preset",
+      "blocks": [
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        },
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
