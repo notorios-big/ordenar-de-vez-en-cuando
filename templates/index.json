@@ -101,7 +101,7 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "",
+            "collection": "cocina",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -116,7 +116,7 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "",
+            "collection": "dormitorio",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -131,11 +131,41 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "",
+            "collection": "organizador-de-viaje",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_p7Nbp4": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "organizador-de-bano-1",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_dTVWHk": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "cajas-organizadoras",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "Caja Organizadora",
             "button_text": "View products",
             "button_link": "",
             "overlay_color": "#000000",
@@ -146,14 +176,16 @@
       "block_order": [
         "collection_AU4m8j",
         "collection_PHDpYP",
-        "collection_CQfDKe"
+        "collection_CQfDKe",
+        "collection_p7Nbp4",
+        "collection_dTVWHk"
       ],
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
         "show_text_outside": false,
         "space_items": false,
-        "stack_collections": false,
+        "stack_collections": true,
         "collections_per_row_desktop": 4,
         "subheading": "",
         "title": "",
