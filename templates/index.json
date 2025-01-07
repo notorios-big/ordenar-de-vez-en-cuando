@@ -340,8 +340,18 @@
         "collection_e6YWcR": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "products_count": 8,
+            "collection": "especieros",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "Ver Más"
+          }
+        },
+        "collection_wbhcFx": {
+          "type": "collection",
+          "settings": {
+            "collection": "accesorios-cocina",
+            "products_count": 4,
             "title": "",
             "link_url": "",
             "link_text": "Ver Más"
@@ -350,28 +360,18 @@
         "collection_NmtcnV": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "products_count": 8,
-            "title": "",
+            "collection": "repisa",
+            "products_count": 4,
+            "title": "Repisas",
             "link_url": "",
-            "link_text": "View all"
-          }
-        },
-        "collection_wbhcFx": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "products_count": 8,
-            "title": "",
-            "link_url": "",
-            "link_text": "View all"
+            "link_text": "Ver Más"
           }
         }
       },
       "block_order": [
         "collection_e6YWcR",
-        "collection_NmtcnV",
-        "collection_wbhcFx"
+        "collection_wbhcFx",
+        "collection_NmtcnV"
       ],
       "settings": {
         "color_scheme": "",
@@ -382,7 +382,7 @@
         "products_per_row_desktop": 4,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
-        "subheading": "Featured collection"
+        "subheading": "Organiza tu Cocina"
       }
     },
     "faq_jwwELX": {
