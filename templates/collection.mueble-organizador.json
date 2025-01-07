@@ -27,11 +27,7 @@
     },
     "collection-banner": {
       "type": "collection-banner",
-      "custom_css": [
-        ".prose.text-center {text-align: left;}",
-        ".container.container--xs {max-width: 70%; margin-left: 30px; text-align: left;}",
-        "@media (max-width: 730px) {.container.container--xs {max-width: 100%; margin-left: 20px; text-align: left; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "scheme-a5e66293-cb12-4950-b6ab-01492fe1bd47",
         "image_size": "xs",
