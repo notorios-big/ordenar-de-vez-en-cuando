@@ -15,6 +15,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
+            "mobile_image": "shopify://shop_images/person-folding-laundered-towels.jpg",
             "subheading": "Ordena cuando quieras donde quieras",
             "title": "<strong>Haz del orden tu aliado, no una obligación</strong>",
             "mobile_text_position": "place-self-center text-center",
@@ -40,6 +41,7 @@
         "slide-2": {
           "type": "image",
           "settings": {
+            "mobile_image": "shopify://shop_images/a-clean-desk-setup-for-success.jpg",
             "subheading": "Organiza Sin vergüenza",
             "title": "Te entendemos... <strong>Porque a veces, un poco de orden es suficiente</strong>",
             "mobile_text_position": "place-self-end-start text-start",
@@ -243,18 +245,55 @@
         "subheading": "NUESTRAS CATEGORÍAS MÁS QUERIDAS"
       }
     },
-    "newsletter_JW8Knz": {
-      "type": "newsletter",
+    "featured_collections_QzTawj": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_Gz3Fm8": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "Ver Más"
+          }
+        },
+        "collection_CdEnKf": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_npwwhE": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_Gz3Fm8",
+        "collection_CdEnKf",
+        "collection_npwwhE"
+      ],
       "settings": {
         "color_scheme": "",
-        "separate_section_with_border": false,
-        "image_size": "auto",
-        "subheading": "Suscríbete a nuestro",
-        "title": "Newsletter",
-        "content": "<p>Sé el primero en saber sobre nuevas colecciones y ofertas exclusivas.</p>",
-        "button_text": "Suscríbete",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Featured collection"
       }
     },
     "faq_jwwELX": {
@@ -263,7 +302,7 @@
         "category_j7q7xq": {
           "type": "category",
           "settings": {
-            "title": "Order",
+            "title": "",
             "icon": "none",
             "icon_width": 16
           }
@@ -297,12 +336,26 @@
         "question_qfQmy3"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-138ec436-27e3-419a-94aa-e6e1adad1a76",
         "separate_section_with_border": false,
         "show_categories": false,
-        "subheading": "Need help?",
-        "title": "Frequently Asked Questions",
+        "subheading": "Necesitas Ayuda?",
+        "title": "Preguntas Frecuentes",
         "content": ""
+      }
+    },
+    "newsletter_JW8Knz": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "subheading": "Suscríbete a nuestro",
+        "title": "Newsletter",
+        "content": "<p>Sé el primero en saber sobre nuevas colecciones y ofertas exclusivas.</p>",
+        "button_text": "Suscríbete",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     }
   },
@@ -311,7 +364,8 @@
     "custom_liquid_bdef6Y",
     "collection_slider_g6KRmA",
     "featured_collections_3EcRtp",
-    "newsletter_JW8Knz",
-    "faq_jwwELX"
+    "featured_collections_QzTawj",
+    "faq_jwwELX",
+    "newsletter_JW8Knz"
   ]
 }
