@@ -66,6 +66,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "organizador-bebe",
+            "image": "shopify://shop_images/a9667e8f338bf3cd205d7caf60cd8950.webp",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -141,6 +142,7 @@
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "organizador-de-ropa",
+            "image": "shopify://shop_images/eca81cf1fa9b8f52ec2335c3668c571a.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
