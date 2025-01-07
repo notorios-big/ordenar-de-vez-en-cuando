@@ -43,6 +43,72 @@
         "overlay_opacity": 30
       }
     },
+    "collection_slider_wP7zLN": {
+      "type": "collection-slider",
+      "blocks": {
+        "collection_VHzFYc": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_QCErKw": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_VirYfm": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_VHzFYc",
+        "collection_QCErKw",
+        "collection_VirYfm"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": false,
+        "collections_per_row_desktop": 5,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
     "main": {
       "type": "main-collection",
       "settings": {
@@ -68,6 +134,7 @@
   "order": [
     "custom_liquid_3RqXxr",
     "collection-banner",
+    "collection_slider_wP7zLN",
     "main"
   ]
 }
