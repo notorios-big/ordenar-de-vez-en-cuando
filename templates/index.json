@@ -267,7 +267,7 @@
             "products_count": 4,
             "title": "Colgadores",
             "link_url": "",
-            "link_text": "View all"
+            "link_text": "Ver Más"
           }
         },
         "collection_npwwhE": {
@@ -277,7 +277,7 @@
             "products_count": 4,
             "title": "Bolsas",
             "link_url": "",
-            "link_text": "View all"
+            "link_text": "Ver Más"
           }
         }
       },
@@ -296,6 +296,35 @@
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
         "subheading": "Ordena tu Ropa con"
+      }
+    },
+    "featured_collections_aEAD9h": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_e6YWcR": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_e6YWcR"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Featured collection"
       }
     },
     "faq_jwwELX": {
@@ -367,6 +396,7 @@
     "collection_slider_g6KRmA",
     "featured_collections_3EcRtp",
     "featured_collections_QzTawj",
+    "featured_collections_aEAD9h",
     "faq_jwwELX",
     "newsletter_JW8Knz"
   ]
