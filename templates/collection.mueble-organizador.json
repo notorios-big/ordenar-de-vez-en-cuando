@@ -50,7 +50,7 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "",
+            "collection": "estanteria",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -65,7 +65,7 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "",
+            "collection": "muebles-funcionales",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -80,7 +80,22 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "",
+            "collection": "muebles-madera",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_4KaPUk": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "repisa",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -95,14 +110,15 @@
       "block_order": [
         "collection_VHzFYc",
         "collection_QCErKw",
-        "collection_VirYfm"
+        "collection_VirYfm",
+        "collection_4KaPUk"
       ],
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
         "show_text_outside": false,
         "space_items": false,
-        "stack_collections": false,
+        "stack_collections": true,
         "collections_per_row_desktop": 5,
         "subheading": "",
         "title": "",
