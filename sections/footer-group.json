@@ -40,6 +40,7 @@
         },
         "newsletter": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "title": "Suscríbete a nuestros correos electrínicos !!!",
             "content": "<p>Sé el primero en saber sobre nuevas colecciones y ofertas exclusivas.</p>",

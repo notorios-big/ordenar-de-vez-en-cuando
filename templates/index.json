@@ -243,76 +243,18 @@
         "subheading": "NUESTRAS CATEGORÍAS MÁS QUERIDAS"
       }
     },
-    "media_grid_ncF3Lt": {
-      "type": "media-grid",
-      "blocks": {
-        "image_MUjxPX": {
-          "type": "image",
-          "settings": {
-            "color_scheme": "",
-            "column_count": "8",
-            "row_count": 2,
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_position": "place-self-center text-center",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_39xnzg": {
-          "type": "image",
-          "settings": {
-            "color_scheme": "",
-            "column_count": "4",
-            "row_count": 1,
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_position": "place-self-center text-center",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_9xayjC": {
-          "type": "image",
-          "settings": {
-            "color_scheme": "",
-            "column_count": "4",
-            "row_count": 1,
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_position": "place-self-center text-center",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "image_MUjxPX",
-        "image_39xnzg",
-        "image_9xayjC"
-      ],
+    "newsletter_JW8Knz": {
+      "type": "newsletter",
       "settings": {
         "color_scheme": "",
-        "separate_section_with_border": true,
-        "desktop_row_height": 290,
-        "mobile_row_height": 180,
-        "section_width": "md",
-        "spacing": "md",
-        "subheading": "",
-        "title": "Media grid",
-        "content": ""
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "subheading": "Suscríbete a nuestro",
+        "title": "Newsletter",
+        "content": "<p>Sé el primero en saber sobre nuevas colecciones y ofertas exclusivas.</p>",
+        "button_text": "Suscríbete",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
       }
     }
   },
@@ -321,6 +263,6 @@
     "custom_liquid_bdef6Y",
     "collection_slider_g6KRmA",
     "featured_collections_3EcRtp",
-    "media_grid_ncF3Lt"
+    "newsletter_JW8Knz"
   ]
 }
