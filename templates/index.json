@@ -247,6 +247,42 @@
         "subheading": "NUESTRAS CATEGORÍAS MÁS QUERIDAS"
       }
     },
+    "rich_text_9WWGw8": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_adctfz": {
+          "type": "subheading",
+          "settings": {
+            "text": "Manten el"
+          }
+        },
+        "heading_EY6UNG": {
+          "type": "heading",
+          "settings": {
+            "text": "Orden",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_wVeeJN": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Organiza de manera fácil y rápida con nuestras colecciones.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_adctfz",
+        "heading_EY6UNG",
+        "richtext_wVeeJN"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
     "featured_collections_QzTawj": {
       "type": "featured-collections",
       "blocks": {
@@ -310,10 +346,32 @@
             "link_url": "",
             "link_text": "Ver Más"
           }
+        },
+        "collection_NmtcnV": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        },
+        "collection_wbhcFx": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
         }
       },
       "block_order": [
-        "collection_e6YWcR"
+        "collection_e6YWcR",
+        "collection_NmtcnV",
+        "collection_wbhcFx"
       ],
       "settings": {
         "color_scheme": "",
@@ -395,6 +453,7 @@
     "custom_liquid_bdef6Y",
     "collection_slider_g6KRmA",
     "featured_collections_3EcRtp",
+    "rich_text_9WWGw8",
     "featured_collections_QzTawj",
     "featured_collections_aEAD9h",
     "faq_jwwELX",
