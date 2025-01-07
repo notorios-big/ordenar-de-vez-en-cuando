@@ -90,7 +90,7 @@
         "separate_section_with_border": true,
         "remove_vertical_spacing": false,
         "remove_horizontal_spacing": false,
-        "liquid": "<p>Innova con </p>\n<h1>Organizador</h1>",
+        "liquid": "<p>Innova siendo un </p>\n<h1>Organizador</h1>",
         "text_alignment": "start"
       }
     },
