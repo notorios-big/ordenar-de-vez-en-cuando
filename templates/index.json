@@ -360,9 +360,9 @@
         "collection_NmtcnV": {
           "type": "collection",
           "settings": {
-            "collection": "repisa",
+            "collection": "escurridor-de-platos",
             "products_count": 4,
-            "title": "Repisas",
+            "title": "",
             "link_url": "",
             "link_text": "Ver Más"
           }
