@@ -166,7 +166,7 @@
         "collection_GjbE9i": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "nuevos-productos",
             "products_count": 4,
             "title": "RECIEN LLEGADOS",
             "link_url": "shopify://collections/nuevos-productos",
