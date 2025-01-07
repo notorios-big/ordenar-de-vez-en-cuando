@@ -253,9 +253,9 @@
         "collection_Gz3Fm8": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "products_count": 8,
-            "title": "",
+            "collection": "canasto-de-ropa",
+            "products_count": 4,
+            "title": "canastos",
             "link_url": "",
             "link_text": "Ver Más"
           }
@@ -263,9 +263,9 @@
         "collection_CdEnKf": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "products_count": 8,
-            "title": "",
+            "collection": "colgador-de-ropa",
+            "products_count": 4,
+            "title": "Colgadores",
             "link_url": "",
             "link_text": "View all"
           }
@@ -273,9 +273,9 @@
         "collection_npwwhE": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "products_count": 8,
-            "title": "",
+            "collection": "bolsas-para-ropa",
+            "products_count": 4,
+            "title": "Bolsas",
             "link_url": "",
             "link_text": "View all"
           }
