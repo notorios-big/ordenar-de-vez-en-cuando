@@ -16,7 +16,7 @@
           "type": "image",
           "settings": {
             "subheading": "Ordena cuando quieras donde quieras",
-            "title": "SOLUCIONA EL DESORDEN CON NUESTROS ORGANIZADORES",
+            "title": "<strong>Haz del orden tu aliado, no una obligación</strong>",
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "content_max_width": 840,
@@ -41,7 +41,7 @@
           "type": "image",
           "settings": {
             "subheading": "Organiza Sin vergüenza",
-            "title": "Te entendemos, <strong>organiza cuando y donde te plazca.</strong>",
+            "title": "Te entendemos... <strong>Porque a veces, un poco de orden es suficiente</strong>",
             "mobile_text_position": "place-self-end-start text-start",
             "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "content_max_width": 780,
