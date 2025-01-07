@@ -59,7 +59,7 @@
           "background": "#b8dde3",
           "background_gradient": "",
           "text_color": "#1c1c1c",
-          "primary_button_background": "#f4ede1",
+          "primary_button_background": "#e7c690",
           "primary_button_text_color": "#1c1c1c",
           "circle_button_background": "#ffffff",
           "circle_button_icon": "#1c1c1c"
@@ -70,7 +70,7 @@
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
           "text_color": "#ffffff",
-          "primary_button_background": "#ffffff",
+          "primary_button_background": "#e7c690",
           "primary_button_text_color": "#1c1c1c",
           "circle_button_background": "#ffffff",
           "circle_button_icon": "#1c1c1c"
