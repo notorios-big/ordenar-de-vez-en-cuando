@@ -121,6 +121,7 @@
           "settings": {
             "color_scheme": "",
             "collection": "dormitorio",
+            "image": "shopify://shop_images/12490969ae9a5c0db84000649fcd21f1.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
@@ -151,6 +152,7 @@
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "organizador-de-bano-1",
+            "image": "shopify://shop_images/e5ee24eb8eaaef74f0e42408fe3c96eb.jpg",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
