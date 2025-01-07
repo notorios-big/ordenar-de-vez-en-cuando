@@ -1,3 +1,116 @@
+<style>
+
+.collection-slider.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#collection-slider-{{ section.id }} {
+  --collection-slider-item-size: 84vw;
+
+  {%- if section.settings.space_items -%}
+    --collection-slider-gap: 1.5rem;
+  {%- endif -%}
+}
+
+.collection-slider {
+  display: flex;
+  gap: 30px;
+}
+.collection-slider .collection-card-slider {
+  width: 100px;
+}
+.collection-slider .collection-card-slider>div,
+.collection-slider .collection-card-slider>div>img {
+  aspect-ratio: 1 / 1;
+  height: 100px;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  #collection-slider-{{ section.id }} {
+    --collection-slider-item-size: 62vw;
+  }
+  .collection-slider {
+    gap: 50px;
+  }
+  
+  .collection-slider .collection-card-slider {
+    width: 150px;
+  }
+  .collection-slider .collection-card-slider>div,
+  .collection-slider .collection-card-slider>div>img {
+    height: 150px;
+    max-height: 150px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  #collection-slider-{{ section.id }} {
+    /* --collection-slider-item-size: unset; */
+    --collection-slider-items-per-row: {{ section.settings.collections_per_row_desktop }};
+
+    {%- if section.settings.space_items -%}
+      --collection-slider-gap: 1.875rem;
+    {%- endif -%}
+  }
+}
+
+
+#collection-slider-{{ section.id }} .collection-card-slider img {
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+#collection-slider-{{ section.id }} .collection-card-slider .content-over-media-slider {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content-over-media-slider {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1; 
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.collection-slider--text-outside {
+  row-gap: 3rem;
+}
+
+.collection-card-slider {
+  align-content: start;
+  gap: 10px;
+  display: grid;
+}
+.collection-card-slider>h3 {
+  text-align: center;
+  line-height: 1.2;
+  font-size: 
+}
+
+.collection-card-slider h3 {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  font-size: clamp(12px, 2vw, 14px);
+}
+
+@media (max-width: 600px) {
+  .collection-card-slider h3 {
+    font-size: 10px;
+  }
+}
+  
+</style>
 {%- if section.blocks.size > 0 -%}
   
   {%- comment -%}
