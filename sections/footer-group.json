@@ -25,9 +25,9 @@
         "links_YHUgrK": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "main-menu",
             "show_menu_title": true,
-            "menu_title": "Nuestra Historia"
+            "menu_title": "Visita Estas Colecciones"
           }
         },
         "links_mVTtkY": {
