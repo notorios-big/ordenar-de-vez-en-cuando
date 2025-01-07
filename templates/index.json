@@ -312,15 +312,15 @@
         "question_7BgbNM": {
           "type": "question",
           "settings": {
-            "question": "Do you ship overseas?",
-            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "question": "Porque organizar?",
+            "answer": "<p>La organización favorece la concentración y hace que te sientas más feliz. Si no eres una persona organizada, no te preocupes: organizarse es una habilidad que se puede aprender y perfeccionar con el tiempo, por medio de técnicas y herramientas prácticas, como nuestros productos.</p>"
           }
         },
         "question_RMhHgF": {
           "type": "question",
           "settings": {
-            "question": "How long will it take to get my orders?",
-            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "question": "Cuales son los beneficios de Ordenar?",
+            "answer": "<p>Algunos de los beneficios que tiene ordenar son:</p><p>-Gestiona mejor Tu tiempo.</p><p>-Contribuye al Descanso.</p><p>-Te vuelve mas Productivo.</p><p>-Reduce el Estrés.</p><p>-Mejora tu Humor.</p><p>-Fomenta la Creatividad.</p>"
           }
         },
         "question_qfQmy3": {
