@@ -31,6 +31,72 @@
         "overlay_opacity": 30
       }
     },
+    "collection_slider_iRBmDP": {
+      "type": "collection-slider",
+      "blocks": {
+        "collection_FVr4jJ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "cajas-de-almacenamiento",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_PtYpiJ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "organizador-acrilico",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_abrgxG": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "organizadores-de-juguetes",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_FVr4jJ",
+        "collection_PtYpiJ",
+        "collection_abrgxG"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": true,
+        "collections_per_row_desktop": 5,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
     "main": {
       "type": "main-collection",
       "settings": {
@@ -56,6 +122,7 @@
   "order": [
     "page_breadcrumbs_ctGEWV",
     "collection-banner",
+    "collection_slider_iRBmDP",
     "main"
   ]
 }
