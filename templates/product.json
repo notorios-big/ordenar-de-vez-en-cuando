@@ -83,8 +83,8 @@
           "settings": {
             "show_below_gallery": true,
             "icon": "picto-delivery-truck",
-            "title": "Tiempos de Entrega",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "title": "Método de Envió",
+            "content": "<p>Los envíos serán realizados atreves de Blue Express.</p>",
             "liquid": "",
             "page": ""
           }
