@@ -462,6 +462,21 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
+        },
+        "collection_DpgLH7": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "organizador-de-zapatos",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
@@ -472,7 +487,8 @@
         "collection_GypzDL",
         "collection_HHJwaP",
         "collection_mjJmjR",
-        "collection_TGcbdr"
+        "collection_TGcbdr",
+        "collection_DpgLH7"
       ],
       "settings": {
         "color_scheme": "scheme-1",
