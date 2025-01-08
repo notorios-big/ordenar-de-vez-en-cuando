@@ -596,7 +596,7 @@
           "type": "question",
           "settings": {
             "question": "Ideas para organizar",
-            "answer": "<p><strong>Agrupa: </strong>Por color, por función, por material, acero, madera, etc. El orden visual no solo te da armonía, te permite ganar tiempo.... ¡el que no pasarás buscando algo!</p><p><strong>Apila: </strong>Si apilas contenedores ganarás espacio. Al rededor de 3 o 4, para que no te compliques en el sacar alguna bandeja o lo que sea que apiles.</p>"
+            "answer": "<p><strong>Agrupa: </strong>Por color, por función, por material, acero, madera, etc. El orden visual no solo te da armonía, te permite ganar tiempo.... ¡el que no pasarás buscando algo!</p><p><strong>Apila: </strong>Si apilas contenedores ganarás espacio. intenta que sean al rededor de 3 o 4, para que no te compliques al sacar alguna bandeja o lo que sea que apiles.</p>"
           }
         }
       },
