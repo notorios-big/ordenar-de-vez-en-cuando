@@ -88,6 +88,17 @@
             "liquid": "",
             "page": ""
           }
+        },
+        "accordion_egCEkT": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "Medios de Pago",
+            "content": "<ul><li>Mercado Pago</li><li>Web Pay (A través de FLOW)</li><li>Transferencia Bancaria</li></ul>",
+            "liquid": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -101,7 +112,8 @@
         "buy_buttons",
         "description",
         "complementary_products",
-        "accordion_gAetC9"
+        "accordion_gAetC9",
+        "accordion_egCEkT"
       ],
       "settings": {
         "color_scheme": "",
