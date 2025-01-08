@@ -446,6 +446,21 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
+        },
+        "collection_TGcbdr": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "joyero",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
@@ -455,10 +470,11 @@
         "collection_FAGdkA",
         "collection_GypzDL",
         "collection_HHJwaP",
-        "collection_mjJmjR"
+        "collection_mjJmjR",
+        "collection_TGcbdr"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "separate_section_with_border": false,
         "show_text_outside": false,
         "space_items": false,
