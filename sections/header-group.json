@@ -16,6 +16,7 @@
       "blocks": {
         "message-1": {
           "type": "message",
+          "disabled": true,
           "settings": {
             "text": "⚡Entregas en 3 días hábiles en Santiago⚡"
           }
