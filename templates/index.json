@@ -255,20 +255,20 @@
         "subheading_adctfz": {
           "type": "subheading",
           "settings": {
-            "text": "Manten el"
+            "text": "Manten todo con"
           }
         },
         "heading_EY6UNG": {
           "type": "heading",
           "settings": {
-            "text": "Orden",
+            "text": "Organizadores",
             "heading_tag": "h2"
           }
         },
         "richtext_wVeeJN": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Organiza de manera fácil y rápida con nuestras colecciones</p>"
+            "content": "<p>Ordena de manera fácil y rápida con nuestras colecciones</p>"
           }
         }
       },
@@ -553,6 +553,20 @@
         "subheading": "Organiza tu Cocina"
       }
     },
+    "newsletter_JW8Knz": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "subheading": "Suscríbete a nuestro",
+        "title": "Newsletter",
+        "content": "<p>Sé el primero en saber sobre nuevas colecciones y ofertas exclusivas.</p>",
+        "button_text": "Suscríbete",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "faq_jwwELX": {
       "type": "faq",
       "blocks": {
@@ -599,20 +613,6 @@
         "subheading": "Necesitas Ayuda?",
         "title": "Preguntas Frecuentes",
         "content": ""
-      }
-    },
-    "newsletter_JW8Knz": {
-      "type": "newsletter",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "image_size": "auto",
-        "subheading": "Suscríbete a nuestro",
-        "title": "Newsletter",
-        "content": "<p>Sé el primero en saber sobre nuevas colecciones y ofertas exclusivas.</p>",
-        "button_text": "Suscríbete",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
       }
     }
   },
