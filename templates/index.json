@@ -326,7 +326,7 @@
       ],
       "settings": {
         "color_scheme": "",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "hide_product_information": false,
         "stack_products": false,
         "products_per_row_mobile": "1",
@@ -543,7 +543,7 @@
       ],
       "settings": {
         "color_scheme": "",
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "hide_product_information": false,
         "stack_products": false,
         "products_per_row_mobile": "1",
@@ -625,7 +625,7 @@
     "featured_collections_QzTawj",
     "collection_slider_J9dr6E",
     "featured_collections_aEAD9h",
-    "faq_jwwELX",
-    "newsletter_JW8Knz"
+    "newsletter_JW8Knz",
+    "faq_jwwELX"
   ]
 }
