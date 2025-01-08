@@ -89,6 +89,17 @@
             "text_color": "#ffffff",
             "border_color": ""
           }
+        },
+        "accordion_gAetC9": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "picto-delivery-truck",
+            "title": "Tiempos de Entrega",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "liquid": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -102,7 +113,8 @@
         "buy_buttons",
         "description",
         "complementary_products",
-        "feature_with_icon_z6Jy4c"
+        "feature_with_icon_z6Jy4c",
+        "accordion_gAetC9"
       ],
       "settings": {
         "color_scheme": "",
