@@ -336,57 +336,6 @@
         "subheading": "Ordena tu Ropa con"
       }
     },
-    "featured_collections_aEAD9h": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection_e6YWcR": {
-          "type": "collection",
-          "settings": {
-            "collection": "especieros",
-            "products_count": 4,
-            "title": "",
-            "link_url": "",
-            "link_text": "Ver Más"
-          }
-        },
-        "collection_wbhcFx": {
-          "type": "collection",
-          "settings": {
-            "collection": "accesorios-cocina",
-            "products_count": 4,
-            "title": "",
-            "link_url": "",
-            "link_text": "Ver Más"
-          }
-        },
-        "collection_NmtcnV": {
-          "type": "collection",
-          "settings": {
-            "collection": "escurridor-de-platos",
-            "products_count": 4,
-            "title": "",
-            "link_url": "",
-            "link_text": "Ver Más"
-          }
-        }
-      },
-      "block_order": [
-        "collection_e6YWcR",
-        "collection_wbhcFx",
-        "collection_NmtcnV"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "1",
-        "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 1,
-        "vertical_spacing_factor": 1,
-        "subheading": "Organiza tu Cocina"
-      }
-    },
     "collection_slider_J9dr6E": {
       "type": "collection-slider",
       "blocks": {
@@ -520,6 +469,57 @@
         "content": ""
       }
     },
+    "featured_collections_aEAD9h": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_e6YWcR": {
+          "type": "collection",
+          "settings": {
+            "collection": "especieros",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "Ver Más"
+          }
+        },
+        "collection_wbhcFx": {
+          "type": "collection",
+          "settings": {
+            "collection": "accesorios-cocina",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "Ver Más"
+          }
+        },
+        "collection_NmtcnV": {
+          "type": "collection",
+          "settings": {
+            "collection": "escurridor-de-platos",
+            "products_count": 4,
+            "title": "",
+            "link_url": "",
+            "link_text": "Ver Más"
+          }
+        }
+      },
+      "block_order": [
+        "collection_e6YWcR",
+        "collection_wbhcFx",
+        "collection_NmtcnV"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Organiza tu Cocina"
+      }
+    },
     "faq_jwwELX": {
       "type": "faq",
       "blocks": {
@@ -590,8 +590,8 @@
     "featured_collections_3EcRtp",
     "rich_text_9WWGw8",
     "featured_collections_QzTawj",
-    "featured_collections_aEAD9h",
     "collection_slider_J9dr6E",
+    "featured_collections_aEAD9h",
     "faq_jwwELX",
     "newsletter_JW8Knz"
   ]
