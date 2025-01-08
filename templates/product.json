@@ -78,18 +78,6 @@
             "show_quick_buy": true
           }
         },
-        "feature_with_icon_z6Jy4c": {
-          "type": "feature_with_icon",
-          "settings": {
-            "text": "Política de Envío",
-            "link": "shopify://policies/shipping-policy",
-            "icon": "picto-delivery-truck",
-            "icon_width": 16,
-            "background": "#c7a080",
-            "text_color": "#ffffff",
-            "border_color": ""
-          }
-        },
         "accordion_gAetC9": {
           "type": "accordion",
           "settings": {
@@ -113,7 +101,6 @@
         "buy_buttons",
         "description",
         "complementary_products",
-        "feature_with_icon_z6Jy4c",
         "accordion_gAetC9"
       ],
       "settings": {
