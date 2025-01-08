@@ -33,7 +33,7 @@
         "links_mVTtkY": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "sobre-nosotros",
             "show_menu_title": true,
             "menu_title": "Sobre Nosotros"
           }
