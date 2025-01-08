@@ -387,6 +387,139 @@
         "subheading": "Organiza tu Cocina"
       }
     },
+    "collection_slider_J9dr6E": {
+      "type": "collection-slider",
+      "blocks": {
+        "collection_6UareQ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "mueble-organizador",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_QUMjit": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "repisa",
+            "image": "shopify://shop_images/fabb8add1c57c66d7381b7eac0acbc77.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_zWN7cc": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "estanteria",
+            "image": "shopify://shop_images/7eb43329e5ccf9360118656d1296a7f3.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_FAGdkA": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "organizador-de-escritorio",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_GypzDL": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "organizadores-de-juguetes",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_HHJwaP": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "soporte-para-vinos-y-copas",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_mjJmjR": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-4",
+            "collection": "tendedero-de-ropa",
+            "image": "shopify://shop_images/2e7c224f35db465a1bc28fdc03c903f8.jpg",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_6UareQ",
+        "collection_QUMjit",
+        "collection_zWN7cc",
+        "collection_FAGdkA",
+        "collection_GypzDL",
+        "collection_HHJwaP",
+        "collection_mjJmjR"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "show_text_outside": false,
+        "space_items": false,
+        "stack_collections": false,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
     "faq_jwwELX": {
       "type": "faq",
       "blocks": {
@@ -458,6 +591,7 @@
     "rich_text_9WWGw8",
     "featured_collections_QzTawj",
     "featured_collections_aEAD9h",
+    "collection_slider_J9dr6E",
     "faq_jwwELX",
     "newsletter_JW8Knz"
   ]
