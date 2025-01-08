@@ -82,7 +82,7 @@
           "type": "accordion",
           "settings": {
             "show_below_gallery": true,
-            "icon": "picto-delivery-truck",
+            "icon": "picto-box",
             "title": "Método de Envió",
             "content": "<p>Los envíos serán realizados atreves de Blue Express.</p>",
             "liquid": "",
