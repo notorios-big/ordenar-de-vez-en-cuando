@@ -146,10 +146,29 @@
         "title": "<strong>Explora estas recomendaciones</strong>",
         "content": ""
       }
+    },
+    "17364354246eb33931": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_jB6R6z": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_jB6R6z"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "17364354246eb33931"
   ]
 }
