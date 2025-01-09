@@ -97,7 +97,7 @@
           "type": "accordion",
           "settings": {
             "show_below_gallery": true,
-            "icon": "none",
+            "icon": "picto-credit-card",
             "title": "Medios de Pago",
             "content": "<ul><li>Mercado Pago</li><li>Web Pay (A través de FLOW)</li><li>Transferencia Bancaria</li></ul>",
             "liquid": "",
