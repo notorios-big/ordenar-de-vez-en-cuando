@@ -123,7 +123,7 @@
       "settings": {
         "color_scheme": "",
         "container_size": "lg",
-        "product_info_size": 45,
+        "product_info_size": 50,
         "show_sticky_add_to_cart": true,
         "center_basic_info": false,
         "desktop_media_layout": "grid",
