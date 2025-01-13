@@ -88,7 +88,7 @@
             "show_below_gallery": true,
             "icon": "picto-box",
             "title": "Tiempos de Entrega",
-            "content": "<ul><li>Santiago: 1-5 días hábiles</li><li>Regiones centrales: 1 a 7 días hábiles</li><li>Regiones extremas: 3 a 10 días hábiles</li><li>Región de Magallanes: 7-15 días hábiles</li></ul><p>Los tiempos dependen del carrier que se escoja, que puede ser Blue Express o Starken.</p><p><strong>IMPORTANTE:</strong> si pagas con transferencia electrónica, depósito bancario o similar y demoras u olvidas enviar tu comprobante al email indicado al hacer tu compra, entonces tu pedido podría sufrir retrasos.</p>",
+            "content": "<ul><li>Santiago: 1-4 días hábiles</li><li>Regiones centrales: 1 a 6 días hábiles</li><li>Regiones extremas: 3 a 8 días hábiles</li><li>Regiones de Aysen y Magallanes: 4-16 días hábiles</li></ul><p>Los tiempos dependen del carrier que se escoja, que puede ser Blue Express o Starken.</p><p><strong>IMPORTANTE:</strong> si pagas con transferencia electrónica, depósito bancario o similar y demoras u olvidas enviar tu comprobante al email indicado al hacer tu compra, entonces tu pedido podría sufrir retrasos.</p>",
             "liquid": "",
             "page": ""
           }
