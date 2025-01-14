@@ -1,15 +1,43 @@
-# we use Shopify as our ecommerce platform
 {%- comment -%}
 # Caution! Please read https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt before proceeding to make changes to this file.
 {% endcomment %}
+  
 {% for group in robots.default_groups %}
-  {{- group.user_agent -}}
-
-  {% for rule in group.rules %}
-    {{- rule -}}
-  {% endfor %}
-
   {%- if group.sitemap != blank -%}
     {{ group.sitemap }}
   {%- endif -%}
+  
+  {{- group.user_agent -}}
+
+  {% for rule in group.rules %}
+    {%- if rule.value != "/recommendations/products" and rule.value != "/*/recommendations/products" and rule.value != "/*/policies/" and rule.value != "/policies/" -%}
+        {{- rule -}}
+    {%- endif -%}
+  {% endfor %}
+  
+  {%- if group.user_agent.value == '*' -%}
+{%- comment -%}
+{{ 'Disallow: /*/*/*?pr_prod_strat=' }}
+{{ 'Disallow: /*/*?pr_prod_strat=' }}
+{% endcomment %}
+{{ 'Disallow: /apps/store-locator' }}
+{{ 'Disallow: /collections/all*' }}
+{{ 'Disallow: */collections/all' }}
+{{ 'Disallow: /collections/vendors*?*q=*' }}
+{{ 'Disallow: /collections/types*?*q=*' }}
+{{ 'Disallow: /collections/*?*constraint*' }}
+{{ 'Disallow: /collections/*/*' }}
+{{ 'Disallow: /collections/*?*filter*' }}
+{{ 'Disallow: /collections/*?*pf_*' }}
+{{ 'Disallow: /collections/*?*view*' }}
+{{ 'Disallow: /collections/*?*grid_list*' }}
+{{ 'Disallow: /blogs/*/tagged/*' }}
+{{ 'Disallow: /*.atom*' }}
+{{ 'Disallow: /*/*.atom*' }}
+{{ 'Disallow: /*/vendors?q' }}
+{{ 'Disallow: /*/vendors' }}
+{{ 'Disallow: */wpm*' }}
+    
+  {%- endif -%}
+
 {% endfor %}
