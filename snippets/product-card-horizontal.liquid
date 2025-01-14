@@ -22,7 +22,7 @@ Supported variables
 
   <div class="horizontal-product-card__info">
     <div class="v-stack gap-1 justify-items-start">
-      <a href="{{ product.url }}" class="product-title {% if settings.product_card_text_font == 'heading' %}h6{% endif %}" data-instant>{{ product.title }}</a>
+       <a href="{{ product.url | default: "#" | split: "?" | first }}" class="product-title {% if settings.product_card_text_font == 'heading' %}h6{% endif %}" data-instant>{{ product.title }}</a>
       {%- render 'price-list', product: product, context: 'card' -%}
     </div>
 
