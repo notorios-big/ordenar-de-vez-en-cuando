@@ -15,7 +15,7 @@ Supported variables
 
 <div class="horizontal-product-card">
   {%- if product.featured_media -%}
-    <a href="{{ product.url }}" class="horizontal-product-card__figure" data-instant>
+     <a href="{{ product.url | default: "#" | split: "?" | first }}" class="horizontal-product-card__figure" data-instant>
       {{- product.featured_media | image_url: width: product.featured_media.width | image_tag: loading: 'lazy', sizes: '100px', widths: '100,150,200,250,300', class: 'horizontal-product-card__image' -}}
     </a>
   {%- endif -%}
